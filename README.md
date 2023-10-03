@@ -27,7 +27,8 @@ git add --all
 7. Enter ```git status``` to see the changes to be committed.
 8. Enter  ```git commit -m '<commit_message>'``` at the command line to commit new files/changes to the local repository.
    For the <commit_message>, you can enter anything that describes the changes you are committing.
-9. ```git push```
+9. ```git push --set-upstream origin <branchname>``` for new branch
+    ```git push``` for old branch
 10. Create pull request nhaa mn
     
 
