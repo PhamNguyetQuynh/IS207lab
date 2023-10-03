@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  text-align: center;
+  width: 300px;
+}
+hr {
+  border: lightgray solid 0.5px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: 15px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  font-size: 15px;
+}
+div {
+  padding: 5px 0px;
+}
+img {
+  width: 15px;
+}
+.wrapper {
+  border: 1px solid black;
+  height: 100%;
+  width: 300px;
+}
+.header {
+  color: gray;
+}
+tr:nth-child(odd) {
+  background-color: #d6eeee;
+}
+td {
+  width: 300px;
+}
+.sidenav {
+  display: block;
+  text-align: left;
+}
+input {
+  padding: 12px;
+  border: none;
+  resize: vertical;
+}
+form {
+  border: solid black 0.5px;
+}
+
+.dropdownContainer {
+  margin-left: 25px;
+}
+.overallMana {
+  display: inline-block;
+}
+.searchbtn {
+  border: black solid 0.1px;
+}
