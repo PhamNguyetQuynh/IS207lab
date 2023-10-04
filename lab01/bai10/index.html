@@ -53,9 +53,9 @@
           <tr>
             <td>
               <div class="buttonroducts">
-                <button class="buttonroducts">
+                <button class="buttonproducts" onclick="toggle()">
                   Sản phẩm
-                  <i class="drobuttondown"></i>
+                  <i class="dropbuttondown"></i>
                 </button>
               </div>
             </td>
@@ -63,7 +63,7 @@
 
           <tr>
             <td>
-              <div class="dropdownContainer">
+              <div class="dropdownContainer" id="dropdownContainer">
                 <div class="sub1">
                   <a href="#">Danh mục sản phẩm</a>
                 </div>
@@ -90,5 +90,15 @@
         </table>
       </div>
     </div>
+    <script>
+      function toggle() {
+        var div = document.getElementById("dropdownContainer");
+        if (div.style.display === "none") {
+          div.style.display = "block"; // Show the div
+        } else {
+          div.style.display = "none"; // Hide the div
+        }
+      }
+    </script>
   </body>
 </html>
