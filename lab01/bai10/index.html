@@ -1,4 +1,4 @@
-<!DOCTYbuttonE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -30,12 +30,19 @@
               </div>
             </td>
           </tr>
+          </table>
+          <table>
+            
+          </table>
           <tr>
             <td>
               <div class="overallMana">
                 <button class="overallMana">
-                  <img src="./img/circle-user-regular.svg" />
-                  Quản Lý Chung
+                  <td>
+                    <img src="./img/circle-user-regular.svg" />
+                  </td>
+                  <td>Quản Lý Chung</td>
+                  
                 </button>
               </div>
             </td>
@@ -43,20 +50,22 @@
           <tr>
             <td>
               <div class="mana">
-                <button class="mana">
-                  <img src="./img/folder-tree-solid.svg" />
+                <button class="buttonMana">
+                  <img src="./img/folder-tree-solid.svg" class="manaImg" />
                   Quản Lý
+                  <img src="./img/angle-right-solid.svg" alt="Arrow Side" class="arrow-img arrow-down" >
                 </button>
               </div>
             </td>
           </tr>
           <tr>
             <td>
-              <div class="buttonroducts">
-                <button class="buttonproducts" onclick="toggle()">
-                  Sản phẩm
-                  <i class="dropbuttondown"></i>
-                </button>
+              <div class="buttonProducts">
+                <button class="buttonProducts" onclick="toggle()">
+                <img src="./img/angle-right-solid.svg" class="prdImg" />                 
+                    Sản phẩm            
+                <img src="./img/angle-right-solid.svg" alt="Arrow Side" class="arrow-img arrow-down" id="arrow">
+              </button>
               </div>
             </td>
           </tr>
@@ -83,7 +92,10 @@
           <tr>
             <td>
               <div class="acc">
-                <button>Tài khoản</button>
+                <button class="buttonAcc">
+                  <img src="./img/circle-user-regular.svg" class="accImg" />
+                  Tài khoản                <img src="./img/angle-right-solid.svg" alt="Arrow Side" class="arrow-img arrow-down" id="arrow">
+                </button>
               </div>
             </td>
           </tr>
@@ -91,12 +103,15 @@
       </div>
     </div>
     <script>
+      var div = document.getElementById("dropdownContainer");
+      var arrow = document.getElementById('arrow');
       function toggle() {
-        var div = document.getElementById("dropdownContainer");
         if (div.style.display === "none") {
           div.style.display = "block"; // Show the div
+          arrow.classList.remove('arrow-down');
         } else {
           div.style.display = "none"; // Hide the div
+          arrow.classList.add('arrow-down'); 
         }
       }
     </script>

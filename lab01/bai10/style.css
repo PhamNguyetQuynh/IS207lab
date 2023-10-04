@@ -28,19 +28,19 @@ img {
   border: 1px solid black;
   height: 100%;
   width: 300px;
+  
 }
 .header {
   color: gray;
 }
-tr:nth-child(even) {
-  background-color: lightgray;
-}
+
 td {
   width: 300px;
 }
 .sidenav {
   display: block;
   text-align: left;
+  
 }
 .search {
   text-align: right;
@@ -54,26 +54,42 @@ td {
 }
 .search button {
   float: right;
-  padding: 8.5px;
+  padding: 7px;
   margin-right: 16px;
   border-top: black solid 0.5px;
   border-bottom: black solid 0.5px;
   border-right: black solid 0.5px;
   border-radius: 0px 5px 5px 0px;
- 
 }
 .search form {
   display: inline-block;
 }
 .search img {
-  vertical-align: middle; /* Align the image vertically in the middle */
-  /* margin-left: 5px; Add some space between the input and image */
+  vertical-align: middle;
 }
 
 .dropdownContainer {
-  margin-left: 25px;
+  margin-left: 45px;
   display: none;
 }
-.overallMana {
-  display: inline-block;
+
+.arrow-img {
+  width: 13px;
+  height: 13px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+}
+.prdImg, .accImg{
+  visibility: hidden;
+}
+.buttonProducts, .buttonAcc, .buttonMana {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
