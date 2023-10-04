@@ -17,101 +17,99 @@
       </div>
 
       <div class="sidenav">
-        <table>
-          <tr>
-            <td>
-              <div class="search">
-                <form>
-                  <input type="text" placeholder="Search.." name="search" />
-                  <button class="searchbtn" type="submit">
-                    <img src="./img/magnifying-glass-solid.svg" />
-                  </button>
-                </form>
-              </div>
-            </td>
-          </tr>
-          </table>
-          <table>
-            
-          </table>
-          <tr>
-            <td>
-              <div class="overallMana">
-                <button class="overallMana">
-                  <td>
-                    <img src="./img/circle-user-regular.svg" />
-                  </td>
-                  <td>Quản Lý Chung</td>
-                  
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="mana">
-                <button class="buttonMana">
-                  <img src="./img/folder-tree-solid.svg" class="manaImg" />
-                  Quản Lý
-                  <img src="./img/chevron-down-solid.svg" alt="Arrow Side" class="arrow-img arrow-down" >
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="buttonProducts">
-                <button class="buttonProducts" onclick="toggle()">
-                <img src="./img/angle-right-solid.svg" class="prdImg" />                 
-                    Sản phẩm            
-                <img src="./img/chevron-down-solid.svg" alt="Arrow Side" class="arrow-img arrow-down" id="arrow">
-              </button>
-              </div>
-            </td>
-          </tr>
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Search.." name="search" />
+            <button class="searchbtn" type="submit">
+              <img src="./img/magnifying-glass-solid.svg" />
+            </button>
+          </form>
+        </div>
 
-          <tr>
-            <td>
-              <div class="dropdownContainer" id="dropdownContainer">
-                <div class="sub1">
-                  <a href="#">Danh mục sản phẩm</a>
-                </div>
-                <div class="sub2">
-                  <a href="#">Sản phẩm</a>
-                </div>
-                <div class="sub3">
-                  <a href="#">Phiếu đặt hàng</a>
-                </div>
-                <div class="sub4">
-                  <a href="#">Hoá đơn</a>
-                </div>
-              </div>
-            </td>
-          </tr>
+        <div class="overallMana">
+          <button class="overallMana">
+            <img src="./img/circle-user-regular.svg" />
+            Quản Lý Chung
+          </button>
+        </div>
 
-          <tr>
-            <td>
-              <div class="acc">
-                <button class="buttonAcc">
-                  <img src="./img/circle-user-regular.svg" class="accImg" />
-                  Tài khoản                <img src="./img/chevron-down-solid.svg" alt="Arrow Side" class="arrow-img arrow-down" id="arrow">
-                </button>
-              </div>
-            </td>
-          </tr>
-        </table>
+        <div class="mana">
+          <button class="buttonMana" onclick="toggleMana()">
+            <img src="./img/folder-tree-solid.svg" class="manaImg" />
+            Quản Lý
+            <img
+              src="./img/chevron-down-solid.svg"
+              alt="Arrow Side"
+              class="arrow-img arrow-down"
+              id="arrowMana"
+            />
+          </button>
+        </div>
+
+        <div class="dropdownMana" id="dropdownMana">
+          <div class="buttonProducts">
+            <button class="buttonProducts" onclick="toggle()">
+              <img src="./img/angle-right-solid.svg" class="prdImg" />
+              Sản phẩm
+              <img
+                src="./img/chevron-down-solid.svg"
+                alt="Arrow Side"
+                class="arrow-img arrow-down"
+                id="arrow"
+              />
+            </button>
+          </div>
+
+          <div class="dropdownContainer" id="dropdownContainer">
+            <div class="sub1">
+              <a href="#">Danh mục sản phẩm</a>
+            </div>
+            <div class="sub2">
+              <a href="#">Sản phẩm</a>
+            </div>
+            <div class="sub3">
+              <a href="#">Phiếu đặt hàng</a>
+            </div>
+            <div class="sub4">
+              <a href="#">Hoá đơn</a>
+            </div>
+          </div>
+
+          <div class="acc">
+            <button class="buttonAcc">
+              <img src="./img/circle-user-regular.svg" class="accImg" />
+              Tài khoản
+              <img
+                src="./img/chevron-down-solid.svg"
+                alt="Arrow Side"
+                class="arrow-img arrow-down"
+                id="arrowAcc"
+              />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <script>
       var div = document.getElementById("dropdownContainer");
-      var arrow = document.getElementById('arrow');
+      var manadiv = document.getElementById("dropdownMana");
+      var arrow = document.getElementById("arrow");
+      function toggleMana() {
+        if (manadiv.style.display === "none") {
+          manadiv.style.display = "block"; // Show the div
+          arrowMana.classList.remove("arrow-down");
+        } else {
+          manadiv.style.display = "none"; // Hide the div
+          arrowMana.classList.add("arrow-down");
+        }
+      }
       function toggle() {
         if (div.style.display === "none") {
           div.style.display = "block"; // Show the div
-          arrow.classList.remove('arrow-down');
+          arrow.classList.remove("arrow-down");
         } else {
           div.style.display = "none"; // Hide the div
-          arrow.classList.add('arrow-down'); 
+          arrow.classList.add("arrow-down");
         }
       }
     </script>

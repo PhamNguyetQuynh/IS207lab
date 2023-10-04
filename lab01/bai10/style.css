@@ -72,7 +72,9 @@ td {
   margin-left: 45px;
   display: none;
 }
-
+.dropdownMana{
+  display: none;
+}
 .arrow-img {
   width: 13px;
   height: 13px;
