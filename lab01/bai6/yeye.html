@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>MMM</title>
+  </head>
+  <body>
+    <div class="wrapper">   
+        <div class="heading">
+          <h1><b> Phiếu đăng ký tham dự thưởng </b></h1>
+        </div>
+        <div class="form">
+          <table>
+            <tr>
+              <td>
+                <label for="name">Họ và tên</label>
+              </td>
+              <td>
+                <input type="text" name="name" size="18px" placeholder="Nguyen Van A">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="addr">Địa chỉ</label>
+              </td>
+              <td>
+                <input type="text" name="addr" size="30px" placeholder="abc,xyz,jqk">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="phone">Điện thoại</label>
+              </td>
+              <td>
+                <input type="text" name="phone" size="18px" placeholder="09xxxxxxxxx">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="gender" >Phái</label>
+              </td>
+              <td>
+                <label class="gender">
+                <input type="radio" name="gender" id="male" check="checked"> Nam
+                </label>
+                <label class="gender">
+                <input type="radio" name="gender" id="female"> Nữ
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="product">Sản phẩm</label>
+              </td>
+              <td>
+                <select name="product" multiple >
+                  <option value="1">Iphone 11 Pro Max</option>
+                  <option value="2">Samsung Glaxy Note 20</option>
+                  <option value="3">Xiaomi Redmi K30</option>
+                  <option value="4">Oppo A53</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="guess">Số dự đoán</label>
+              </td>
+              <td>
+                <input type="number" name="quantity" size="18px" min="0" max="10" step="1" value="5">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input type="submit" name="ok" value="Đăng ký" >
+              </td>
+              
+            </tr>
+          </table>
+        </div>
+        
+      </div>
+    </body>
+  </html>
