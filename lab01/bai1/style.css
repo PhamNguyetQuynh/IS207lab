@@ -1,0 +1,28 @@
+body{
+    background-color: yellow;
+}
+.content {
+   display: flex; 
+   flex-wrap: wrap;
+}
+.cat {
+    display: flex; 
+    margin-bottom: 20px; 
+    position: relative;
+   
+    margin-right:5px;
+    width: 350px;
+  }
+
+  .content img {
+    width: 300px;
+    height: 200px;
+   
+  }
+
+  .content span {
+ 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
