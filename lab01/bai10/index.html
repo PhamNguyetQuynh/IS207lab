@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Homework6</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>TRANG QUẢN TRỊ</h1>
+        <hr />
+      </div>
+
+      <div class="sidenav">
+        <div class="search">
+          <form>
+            <input type="text" placeholder="Search.." name="search" />
+            <button class="searchbtn" type="submit">
+              <img src="./img/magnifying-glass-solid.svg" />
+            </button>
+          </form>
+        </div>
+
+        <div class="overallMana select">
+          <button class="overallMana">
+            <img src="./img/circle-user-regular.svg" />Quản Lý Chung
+          </button>
+        </div>
+
+        <div class="mana select">
+          <button class="buttonMana dropdownbtn" onclick="toggleMana()">
+            <img src="./img/folder-tree-solid.svg" class="manaImg" />Quản Lý
+            <img
+              src="./img/chevron-down-solid.svg"
+              alt="Arrow Side"
+              class="arrow-img arrow-down"
+              id="arrowMana"
+            />
+          </button>
+        </div>
+
+        <div class="dropdownMana" id="dropdownMana">
+          <div class="buttonProducts dropdownbtn select">
+            <button class="buttonProducts" onclick="toggle()">
+              <img src="./img/angle-right-solid.svg" class="prdImg" />
+              Sản phẩm
+              <img
+                src="./img/chevron-down-solid.svg"
+                alt="Arrow Side"
+                class="arrow-img arrow-down"
+                id="arrow"
+              />
+            </button>
+          </div>
+
+          <div class="dropdownContainer" id="dropdownContainer">
+            <div class="sub1 select">
+              <a href="#">Danh mục sản phẩm</a>
+            </div>
+            <div class="sub2 select">
+              <a href="#">Sản phẩm</a>
+            </div>
+            <div class="sub3 select">
+              <a href="#">Phiếu đặt hàng</a>
+            </div>
+            <div class="sub4 select">
+              <a href="#">Hoá đơn</a>
+            </div>
+          </div>
+
+          <div class="acc select">
+            <button class="buttonAcc dropdownbtn" onclick="toggleAcc()">
+              <img src="./img/circle-user-regular.svg" class="accImg" />
+              Tài khoản
+              <img
+                src="./img/chevron-down-solid.svg"
+                alt="Arrow Side"
+                class="arrow-img arrow-down"
+                id="arrowAcc"
+              />
+            </button>
+          </div>
+          <div class="dropdownAcc" id="dropdownAcc"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+     
+      var div = document.getElementById("dropdownContainer");
+      var manadiv = document.getElementById("dropdownMana");
+      var arrow = document.getElementById("arrow");
+      var accdiv = document.getElementById("dropdownAcc");
+      function toggleMana() {
+        if (manadiv.style.display === "none") {
+          manadiv.style.display = "block";
+          arrowMana.classList.remove("arrow-down");
+        } else {
+          manadiv.style.display = "none";
+          arrowMana.classList.add("arrow-down");
+        }
+      }
+      function toggle() {
+        if (div.style.display === "none") {
+          div.style.display = "block";
+          arrow.classList.remove("arrow-down");
+        } else {
+          div.style.display = "none";
+          arrow.classList.add("arrow-down");
+        }
+      }
+      function toggleAcc() {
+        if (accdiv.style.display === "none") {
+          accdiv.style.display = "block";
+          arrowAcc.classList.remove("arrow-down");
+        } else {
+          accdiv.style.display = "none";
+          arrowAcc.classList.add("arrow-down");
+        }
+      }
+    </script>
+  </body>
+</html>

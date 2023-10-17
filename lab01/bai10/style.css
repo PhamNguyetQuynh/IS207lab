@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  text-align: center;
+}
+hr {
+  border: lightgray solid 0.5px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: 15px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  font-size: 15px;
+  cursor: pointer;
+}
+div {
+  padding: 5px 0px;
+}
+img {
+  width: 15px;
+}
+.wrapper {
+  border: 1px solid black;
+  height: 100%;
+  width: 300px;
+  
+}
+.header {
+  color: gray;
+}
+
+td {
+  width: 300px;
+}
+.sidenav {
+  display: block;
+  text-align: left;
+  
+}
+.search {
+  text-align: right;
+  margin-top: 8px;
+}
+.search input[type="text"] {
+  padding: 6px;
+  font-size: 17px;
+  border-right: gray solid 0.5px;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+  /* border: black solid 0.5px;*/
+  border-radius: 5px 0px 0px 5px; 
+}
+.search button {
+  float: right;
+  padding: 7px;
+  /* margin-right: 16px; */
+  /* border-top: black solid 0.5px;
+  border-bottom: black solid 0.5px;
+  border-right: black solid 0.5px;
+  border-radius: 0px 5px 5px 0px; */
+}
+.search form {
+  display: inline-block;
+  border: gray solid 1px;
+  border-radius: 5px;
+  margin: 5px 15px;
+}
+.search img {
+  vertical-align: middle;
+}
+
+.dropdownContainer {
+  margin-left: 45px;
+  display: none;
+}
+.dropdownMana{
+  display: none;
+}
+.arrow-img {
+  width: 13px;
+  height: 13px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.dropdownAcc{
+  display: none;
+}
+.arrow-down {
+  transform: rotate(90deg);
+}
+.prdImg, .accImg{
+  visibility: hidden;
+}
+.buttonProducts, .buttonAcc, .buttonMana {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
